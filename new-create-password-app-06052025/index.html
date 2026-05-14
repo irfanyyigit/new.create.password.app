@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>New Create Password</h2>
+
+        <label>Uzunluk:
+            <input type="number" id="lenght" min="4" max="32" value="12">
+        </label>
+        <br><br>
+
+        <label><input type="checkbox" id="uppercase" checked>Büyük Harf</label><br>
+        <label for=""><input type="checkbox" id="lowercase" checked>Küçük Harf</label><br>
+        <label for=""><input type="checkbox" id="numbers" checked>Rakam</label><br>
+        <label for=""><input type="checkbox" id="symbols">Sembol (!@#...)</label><br><br>
+
+        <button onclick="generatePassword()">Create a Password</button>
+
+        <div class="result" id="passwordResult">thıs ıs your password here</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
